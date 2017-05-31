@@ -1,0 +1,16 @@
+var w = 800;
+var h = 600;
+var basicGame;
+var bgAudio;
+var game;
+var player;
+var playGame;
+var next;
+game = new Phaser.Game(w, h, Phaser.CANVAS, '');
+game.state.add('Menu', Menu);
+game.state.add('playGame', playGame);
+game.state.start('Menu');
+game.state.add('Game');
+game.state.add('about');
+game.state.add('level2');
+game.state.add('level3');
